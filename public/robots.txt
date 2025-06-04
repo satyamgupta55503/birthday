@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://archi-birthday-2080.vercel.app/sitemap.xml

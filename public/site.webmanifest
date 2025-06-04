@@ -1,0 +1,25 @@
+{
+  "name": "Archi's 18th Birthday Celebration",
+  "short_name": "Archi's Birthday",
+  "description": "Join us in celebrating Archi Gupta's 18th birthday with an immersive futuristic experience from 2080.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00ffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["entertainment", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr"
+}
