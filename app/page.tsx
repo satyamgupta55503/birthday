@@ -572,77 +572,47 @@ const Timeline = () => {
 const PhotoGallery3D = () => {
   const photos = [
     {
-      src: "/placeholder.svg?height=400&width=400",
+      src: "/babyarchi.png",
       year: "2007",
       caption: "Baby Archi",
       color: "from-pink-400 to-purple-600",
     },
     {
-      src: "/placeholder.svg?height=400&width=400",
+      src: "/placeholder-logo.png",
       year: "2009",
       caption: "Toddler Days",
       color: "from-cyan-400 to-blue-600",
     },
     {
-      src: "/placeholder.svg?height=400&width=400",
+      src: "/placeholder-user.jpg",
       year: "2011",
       caption: "Little Explorer",
       color: "from-green-400 to-cyan-600",
     },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2013",
-      caption: "School Starter",
-      color: "from-purple-400 to-pink-600",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2015",
-      caption: "Growing Up",
-      color: "from-yellow-400 to-orange-600",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2017",
-      caption: "Pre-Teen",
-      color: "from-indigo-400 to-purple-600",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2019",
-      caption: "Teen Years",
-      color: "from-teal-400 to-blue-600",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2020",
-      caption: "New Decade",
-      color: "from-rose-400 to-pink-600",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2021",
-      caption: "Adventures",
-      color: "from-violet-400 to-purple-600",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2022",
-      caption: "High School",
-      color: "from-emerald-400 to-cyan-600",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2023",
-      caption: "Recent Times",
-      color: "from-amber-400 to-orange-600",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=400",
-      year: "2024",
-      caption: "Almost 18!",
-      color: "from-cyan-400 to-purple-600",
-    },
+{
+  src: "/arch.JPG",
+  year: "2024",
+  caption: "Little Explorer",
+  color: "from-green-400 to-cyan-600",
+},
+{
+  src: "/archis.JPG",
+   year: "2024",
+  caption: "Little Explorer",
+  color: "from-green-400 to-cyan-600",
+},
+{
+  src: "/ar.jpg",
+  year: "2024",
+  caption: "Little Explorer",
+  color: "from-green-400 to-cyan-600",
+},
+{
+  src: "/holi.jpg",
+   year: "2024",
+  caption: "Little Explorer",
+  color: "from-green-400 to-cyan-600",
+}
   ]
 
   type Photo = {
@@ -667,12 +637,7 @@ const PhotoGallery3D = () => {
         initial={{ opacity: 0, rotateY: 180, scale: 0.8 }}
         animate={isVisible ? { opacity: 1, rotateY: 0, scale: 1 } : {}}
         transition={{ delay: index * 0.1, duration: 0.8 }}
-        whileHover={{
-          scale: 1.05,
-          rotateY: 10,
-          rotateX: 10,
-          z: 50,
-        }}
+        whileHover={{ scale: 1.05, rotateY: 10 }}
         className="relative group perspective-1000"
       >
         <div className="relative w-full h-48 md:h-64 bg-black/20 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-3 overflow-hidden transform-gpu">
@@ -738,12 +703,8 @@ const VideoGallery = () => {
   const [videoError, setVideoError] = useState({})
 
   const videos = [
-    { src: "/birthday-video-1.mp4", title: "Birthday Wishes 2024", description: "Friends and family sending love" },
-    { src: "/birthday-video-2.mp4", title: "Childhood Memories", description: "Growing up through the years" },
-    { src: "/birthday-video-3.mp4", title: "School Adventures", description: "Academic journey highlights" },
-    { src: "/birthday-video-4.mp4", title: "Fun Times", description: "Laughter and joy moments" },
-    { src: "/birthday-video-5.mp4", title: "Future Dreams", description: "Aspirations and goals" },
-    { src: "/birthday-video-6.mp4", title: "18th Birthday Special", description: "The big day celebration" },
+    { src: "/archsa.mp4", title: "Birthday Wishes 2024", description: "Friends and family sending love" },
+    { src: "/archsa.mp4", title: "Childhood Memories", description: "Growing up through the years" },
   ]
 
   const handleVideoError = (index: number) => {
@@ -1046,10 +1007,11 @@ export default function ArchiBirthdayPage() {
 
   // Real music tracks (10 minutes each) with fallback
   const musicTracks = [
-    { src: "/archi-birthday-song-1.mp3", title: "Cyberpunk Birthday Anthem", fallback: true },
+    { src: "/archassong.mp3", title: "Cyberpunk Birthday Anthem", fallback: true },
     { src: "/archi-birthday-song-2.mp3", title: "Future Dreams Celebration", fallback: true },
+    { src: "/lover.mp3", title: "Lover's Serenade", fallback: true }
   ]
-
+// lover.mp3
   // Initialize stars
   useEffect(() => {
     if (typeof window !== "undefined") {
